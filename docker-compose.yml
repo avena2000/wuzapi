@@ -19,8 +19,6 @@ services:
     depends_on:
       db:
         condition: service_healthy
-      rabbitmq:
-        condition: service_healthy
     networks:
       - wuzapi-network
     restart: on-failure
